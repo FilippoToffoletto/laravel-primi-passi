@@ -7,9 +7,21 @@
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
-    <title>Document</title>
+    <title>Filippo's blog</title>
 </head>
 <body>
-    <h1>ciao</h1>
+    <h1>{{ $home }}</h1>
+
+    <nav>
+        <ul>
+        @foreach ($links as $link)
+                <li>
+                    <a href="#">{{$link}}</a>
+                </li>
+        @endforeach
+        </ul>
+    </nav>
+
+    <img src="./logo.svg" alt="">
 </body>
 </html>

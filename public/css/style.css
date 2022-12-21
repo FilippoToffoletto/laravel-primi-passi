@@ -3,3 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+/* GENERALS */
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #F3CC42;
+}
+
+
+/* TITLE */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: black;
+    margin: 20px auto;
+}
+h1:hover{
+    color: #F36C42;
+}
+
+
+/* NAVBAR */
+nav{
+    max-width: 1200px;
+    width: 80%;
+    margin: 10px auto;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+li{
+    padding: 2px 30px;
+    border-radius: 20px;
+}
+li:hover{
+    background-color: #F36C42;
+    color: #F3CC42;
+}
+li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+li:hover a{
+    color: #F3CC42;
+}
+
+

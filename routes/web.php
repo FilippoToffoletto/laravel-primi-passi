@@ -17,7 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',function(){
 
-    $menu
+    $home = 'benvenuto';
 
-    return view('home');
+    $links = ['home','chi siamo','dove siamo','contattaci'];
+
+    return view('home', compact('home','links'));
 });
+
+
+
