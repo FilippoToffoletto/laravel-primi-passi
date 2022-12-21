@@ -12,19 +12,38 @@ body{
     font-family: Helvetica, sans-serif;
     background-color: #F3CC42;
 }
+img{
+    width: 100%;
+}
+
+.ft-container{
+    max-width: 1150px;
+    width: 100vw;
+    margin: 20px auto;
+}
 
 
-/* TITLE */
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+header img{
+    width: 300px;
+}
 h1{
-    text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
     color: black;
-    margin: 20px auto;
 }
 h1:hover{
     color: #F36C42;
 }
+
 
 
 /* NAVBAR */
@@ -42,6 +61,7 @@ ul{
 li{
     padding: 2px 30px;
     border-radius: 20px;
+    cursor: pointer;
 }
 li:hover{
     background-color: #F36C42;
@@ -56,6 +76,46 @@ li a{
 }
 li:hover a{
     color: #F3CC42;
+}
+
+/* JUMBOTRON */
+/*
+flex justify-center items-center h-full
+*/
+
+.ft-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ft-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment:fixed ;
+}
+
+.jumbo{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://i.pinimg.com/736x/c5/71/dd/c571dde15a819aa66a5e0617b6528462.jpg');
+    height: 600px;
+    border-radius: 20px;
+}
+
+.jumbo:hover{
+    box-shadow: 0px 10px 10px 0px;
+    cursor: pointer;
 }
 
 
